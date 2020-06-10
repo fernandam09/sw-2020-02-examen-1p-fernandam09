@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "3e3c8de8-cb5a-4603-bb67-e14547673f2b",
+		"name": "EXAMEN I PARCIAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/personas/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"all"
+					]
+				},
+				"description": "Debe regresar todos los registro de personas"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroidentidad",
+							"value": "1501199100909",
+							"description": "Muestra numero identidad",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Marisol  Muñoz Melendez",
+							"description": "Muestra nombre",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "26",
+							"description": "Muestra edad",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Femenino",
+							"description": "Muestra genero",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "fmuoz45@gmail.com",
+							"description": "Muestra correo",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "98219024",
+							"description": "Muestra telefono",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/personas/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"new"
+					]
+				},
+				"description": "Debe agregar una nueva persona a la tabla"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/one/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas/one/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"one",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Debe regresar el registro de la persona identificada por id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/upd/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroidentidad",
+							"value": "1501199502308",
+							"description": "Muestra numero identidad",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Maria Fernanda Muñoz Melendez",
+							"description": "Muestra nombre",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "23",
+							"description": "Muestra edad",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Femenino",
+							"description": "Muestra genero",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "fmuoz45@gmail.com",
+							"description": "Muestra correo",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "98219030",
+							"description": "Muestra telefono",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/personas/upd/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"upd",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Debe actualizar los datos en el registro de la persona"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/del/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas/del/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"del",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Debe eliminar el registro de la persona"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
